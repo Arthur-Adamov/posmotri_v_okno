@@ -36,3 +36,44 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  max-width: 1140px;
+  gap: 30px;
+  padding-block: 133px;
+
+}
+
+.result__video-container {
+
+}
+
+.result__video {
+
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  block-size: 100%;
+  gap: 30px;
+}
+
+.title {
+
+}
+
+.content__list {
+  block-size: 298px;
+  overflow: auto;
+}
