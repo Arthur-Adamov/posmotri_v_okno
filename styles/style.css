@@ -47,6 +47,12 @@ ol {
 
 }
 
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .result__video-container {
   inline-size: 711px;
   block-size: 386px;
@@ -82,12 +88,11 @@ ol {
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
-  /* or 70px */
   text-transform: uppercase;
 
 }
 
-.title::first-line {
+.content__accent {
   color: #545050;
 }
 
@@ -97,6 +102,9 @@ ol {
   gap: 32px;
   block-size: 298px;
   overflow: auto;
+  overflow-x: hidden;
+  
+
   position: relative;
 }
 
@@ -107,6 +115,8 @@ ol {
 .content__card-link {
   display: flex;
   inline-size: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .content__video-card {
@@ -123,10 +133,27 @@ ol {
   gap: 6px;
 }
 
+.content__video-card-title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+}
+
 
 .content__video-card-thumbnail {
   /* background-position: cover;
   background-repeat: repeat; */
-  width: 194px;
+  max-width: 194px;
   height: 103px;
 }
