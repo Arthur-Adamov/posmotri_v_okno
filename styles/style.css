@@ -85,6 +85,9 @@ ol {
   /* or 70px */
   text-transform: uppercase;
 
+}
+
+.title::first-line {
   color: #545050;
 }
 
