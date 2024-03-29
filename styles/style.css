@@ -121,6 +121,8 @@ ol {
   appearance: none;
 }
 
+.search-form__textfield
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
