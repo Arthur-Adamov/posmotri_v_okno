@@ -50,13 +50,14 @@ ol {
 }
 
 .result {
-
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .result__video-container {
   block-size: 386px;
   inline-size: 711px;
-  padding-bottom: 16px;
   position: relative;
 }
 
@@ -69,8 +70,24 @@ ol {
 
 .search-form {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  border: none;
+
+}
+
+.search-form__label {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  gap: 5px;
 }
 
 .search-form__fieldset-title {
@@ -80,6 +97,77 @@ ol {
   font-size: 18px;
   line-height: 22px;
 }
+
+.search-form__textfield {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 225px;
+  height: 27px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: transparent;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7);
+  appearance: none;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 19px;
+  height: 19px;
+  border: 1px solid #FFFFFF;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.button {
+  border: 1px solid #fff;
+  color: inherit;
+
+  background-color: transparent;
+
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.search-form__submit-button {
+  padding: 5px 72px;
+
+}
+
+.more-button {
+  width: 100%;
+  padding: 5px;
+  
+}
+
 
 .content__details {
   display: flex;
@@ -97,6 +185,7 @@ ol {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
+  height: 210px;
 }
 
 .content__accent {
@@ -107,9 +196,10 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* inline-size: 399px; */
+  inline-size: 399px;
   block-size: 298px;
   overflow: auto;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -154,5 +244,6 @@ ol {
 
 .content__video-card-thumbnail {
   max-width: 194px;
+  height: 103px;
 }
 
