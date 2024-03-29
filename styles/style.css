@@ -40,36 +40,51 @@ ol {
 
 .content {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  /* justify-content: center; */
   align-items: flex-end;
-  margin: 133px 30px;
+  padding: 133px 30px;
   gap: 30px;
-  inline-size: 1140px;
-  block-size: 534px;
+  inline-size: 100%;
+  block-size: 800px;
+}
+
+.result {
+
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  block-size: 386px;
+  inline-size: 711px;
+  padding-bottom: 16px;
+}
+
+.result__video {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
+  justify-content: flex-end;
   gap: 26px;
-  width: 399px;
-  height: 534px;
+  block-size: 100%;
 }
 
 .content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* inline-size: 399px; */
   block-size: 298px;
-  overflow-x: hidden;
+  overflow: auto;
 }
