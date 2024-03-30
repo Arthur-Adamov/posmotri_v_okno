@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -241,9 +242,31 @@ ol {
 
 }
 
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid currentColor;
+}
+
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: inherit;
+  margin: 2px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card {
@@ -279,4 +302,3 @@ ol {
   max-width: 194px;
   height: 103px;
 }
-
