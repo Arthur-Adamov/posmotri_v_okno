@@ -55,10 +55,10 @@ ol {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding: 133px 30px;
-  gap: 30px;
   inline-size: 100%;
   block-size: 800px;
+  gap: 30px;
+  padding: 133px 30px;
 }
 
 .result {
@@ -68,16 +68,16 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   block-size: 386px;
   inline-size: 711px;
-  position: relative;
 }
 
 .result__video {
   block-size: 100%;
   inline-size: 100%;
-  object-fit: cover;
   object-position: center;
+  object-fit: cover;
 }
 
 .search-form {
@@ -125,15 +125,15 @@ ol {
 .search-form__textfield {
   min-inline-size: 225px;
   min-block-size: 27px;
-  border-width: 1px 0px;
-  border-style: solid;
-  border-color: #fff;
   background-color: transparent;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #fff;
   appearance: none;
 }
 
@@ -152,12 +152,11 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: flex;
-  /* vertical-align: middle; */
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
-  justify-content: center;
-  align-items: center;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -168,15 +167,15 @@ ol {
 }
 
 .button {
-  border: 1px solid currentColor;
-  color: inherit;
+  padding: 5px;
   background-color: transparent;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  padding: 5px;
+  color: inherit;
+  border: 1px solid currentColor;
   cursor: pointer;
 }
 
@@ -216,13 +215,13 @@ ol {
 }
 
 .title {
+  height: 210px;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  height: 210px;
 }
 
 .content__accent {
@@ -238,10 +237,6 @@ ol {
   overflow: auto;
   overflow-x: hidden;
   position: relative;
-}
-
-.content__list-item {
-
 }
 
 .content__list-item:active {
@@ -262,9 +257,9 @@ ol {
 
 .content__card-link {
   display: block;
+  margin: 2px;
   text-decoration: none;
   color: inherit;
-  margin: 2px;
 }
 
 .content__card-link_current {
@@ -279,8 +274,8 @@ ol {
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
-  gap: 6px;
   justify-content: center;
+  gap: 6px;
 }
 
 .content__video-card-title {
