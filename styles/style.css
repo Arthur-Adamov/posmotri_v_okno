@@ -48,13 +48,14 @@ ol {
 }
 
 .content {
+  margin-top: 133px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   padding: 133px 30px;
   gap: 30px;
-  /* inline-size: 100%;
-  block-size: 800px; */
+  inline-size: 100%;
+  block-size: 800px;
 }
 
 .result {
