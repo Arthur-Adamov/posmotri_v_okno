@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -197,6 +200,7 @@ ol {
 
 .more-button {
   width: 100%;
+  margin-bottom: 1px;
 }
 
 
