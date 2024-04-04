@@ -136,7 +136,6 @@ ol {
   outline: none;
 }
 
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -186,7 +185,6 @@ ol {
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: -3px;
-
 }
 
 .search-form__submit-button {
@@ -261,7 +259,7 @@ ol {
   display: block;
   text-decoration: none;
   color: inherit;
-  /* margin: 2px; */
+  margin: 2px;
 }
 
 .content__card-link_current {
@@ -299,4 +297,6 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: center;
 }
